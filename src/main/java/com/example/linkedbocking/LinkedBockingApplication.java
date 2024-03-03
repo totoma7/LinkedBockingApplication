@@ -47,7 +47,7 @@ class SimpleController {
         workerThread.start();
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/call")
     public String sayHello() {
         SequentialWorkManager manager = new SequentialWorkManager();
         // 작업 큐에 작업 추가. LinkedBlockingQueue는 스레드 안전하므로 동기화 블록 필요 없음
